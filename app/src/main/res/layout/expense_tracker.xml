@@ -129,5 +129,52 @@
             app:layout_constraintStart_toEndOf="@+id/imgTransactions"
             app:layout_constraintTop_toBottomOf="@+id/txtTransactions" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="532dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="198dp">
+
+            <ImageView
+                android:id="@+id/imgTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/income_trx" />
+
+            <TextView
+                android:id="@+id/txtSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:text="Salary"
+                app:layout_constraintStart_toEndOf="@+id/imgTwo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAmnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="KES 40000"
+                app:layout_constraintStart_toEndOf="@+id/imgTwo"
+                app:layout_constraintTop_toBottomOf="@+id/txtSalary" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="56dp"
+                android:text="1 July 2024"
+                app:layout_constraintStart_toEndOf="@+id/txtSalary"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

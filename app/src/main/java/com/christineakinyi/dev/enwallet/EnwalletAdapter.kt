@@ -1,5 +1,6 @@
 package com.christineakinyi.dev.enwallet
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,9 +18,10 @@ class EnwalletAdapter (val expensesList: List<Tracker>):RecyclerView.Adapter<Exp
 
     override fun onBindViewHolder(holder: ExpensesViewHolder, position: Int) {
     val expense = expensesList[position]
-        holder.imgViewOne.text = expense.image
+//       holder.imgTwo.text = expense.image
         holder.txtSalary.text = expense.salary
-        holder.txtAmount.text = expense.amount
+        holder.txtAmnt.text = expense.amount
+        holder.txtDate.text = expense.date
     }
 
     override fun getItemCount(): Int {
@@ -28,8 +30,8 @@ class EnwalletAdapter (val expensesList: List<Tracker>):RecyclerView.Adapter<Exp
 }
 
 class ExpensesViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-    var imgViewOne = itemView.findViewById<TextView>(R.id.imgViewOne)
-    var txtSalary = itemView.findViewById<TextView>(R.id.txtMoneyIn)
-    var txtAmount = itemView.findViewById<TextView>(R.id.txtBalance)
-
+//    var imgTwo = itemView.findViewById<TextView>(R.id.imgTwo)
+    var txtSalary = itemView.findViewById<TextView>(R.id.txtSalary)
+    var txtAmnt = itemView.findViewById<TextView>(R.id.txtAmnt)
+    var txtDate = itemView.findViewById<TextView>(R.id.txtDate)
 }
