@@ -10,17 +10,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtAmount"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:text="KES 40000"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/txtSalary"
+            tools:layout_editor_absoluteX="128dp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgIncome1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -30,110 +29,29 @@
             app:srcCompat="@drawable/income_trx" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtSalary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
             android:text="Salary"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="32dp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/txtDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="56dp"
             android:text="1 July 2024"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:srcCompat="@drawable/expense_trx" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rent"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="139dp" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 16000"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="158dp" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2 July 2024"
-            tools:layout_editor_absoluteX="322dp"
-            tools:layout_editor_absoluteY="139dp" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:srcCompat="@drawable/income_trx" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dividends"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="217dp" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4 July 2024"
-            tools:layout_editor_absoluteX="323dp"
-            tools:layout_editor_absoluteY="230dp" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 2400"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="249dp" />
+            tools:layout_editor_absoluteX="299dp"
+            tools:layout_editor_absoluteY="51dp" />
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7"
-            app:srcCompat="@drawable/expense_trx" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Electricity"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="328dp" />
+            app:srcCompat="@drawable/expense_trx"
+            tools:layout_editor_absoluteY="762dp" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -145,14 +63,6 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView8"
             app:srcCompat="@drawable/expense_trx" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Internet"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="425dp" />
-
         <ImageView
             android:id="@+id/imageView10"
             android:layout_width="wrap_content"
@@ -163,60 +73,5 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView9"
             app:srcCompat="@drawable/expense_trx" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shopping"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="516dp" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5 July 2024"
-            tools:layout_editor_absoluteX="323dp"
-            tools:layout_editor_absoluteY="341dp" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5 July 2024"
-            tools:layout_editor_absoluteX="322dp"
-            tools:layout_editor_absoluteY="440dp" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5 July 2024"
-            tools:layout_editor_absoluteX="322dp"
-            tools:layout_editor_absoluteY="528dp" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 800"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="360dp" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 2500"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="456dp" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 3500"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="547dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

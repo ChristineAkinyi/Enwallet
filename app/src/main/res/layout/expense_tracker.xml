@@ -16,7 +16,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="48dp"
             android:text="MONEY IN"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imgViewOne"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -26,11 +26,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="KES 42400"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imgViewOne"
             app:layout_constraintTop_toBottomOf="@+id/txtMoneyIn" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imgViewOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -40,7 +40,7 @@
             app:srcCompat="@drawable/income" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imgViewTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="72dp"
@@ -50,43 +50,43 @@
             app:srcCompat="@drawable/expense" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtMoneyOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="48dp"
             android:text="MONEY OUT"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imgViewTwo"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txtSalaryTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="KES 23700"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintStart_toEndOf="@+id/imgViewTwo"
+            app:layout_constraintTop_toBottomOf="@+id/txtMoneyOut" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imgViewThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="48dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewOne"
             app:srcCompat="@drawable/balance" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/txtBalanceThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="56dp"
             android:text="BALANCE"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imgViewThree"
             app:layout_constraintTop_toBottomOf="@+id/txtBalance" />
 
         <TextView
@@ -96,38 +96,38 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="KES 18700"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintStart_toEndOf="@+id/imgViewThree"
+            app:layout_constraintTop_toBottomOf="@+id/txtBalanceThree" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imgTransactions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="72dp"
             android:layout_marginTop="48dp"
             app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewTwo"
             app:srcCompat="@drawable/transactions" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/txtTransactions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="56dp"
             android:text="Transactions"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/imgTransactions"
+            app:layout_constraintTop_toBottomOf="@+id/txtSalaryTwo" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/txtTransact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="8"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintStart_toEndOf="@+id/imgTransactions"
+            app:layout_constraintTop_toBottomOf="@+id/txtTransactions" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
