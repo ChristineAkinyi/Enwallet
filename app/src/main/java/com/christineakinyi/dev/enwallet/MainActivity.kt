@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvExpenditure.layoutManager = LinearLayoutManager(this)
+        binding.rvViews.layoutManager = LinearLayoutManager(this)
 
         displayExpenses()
     }
@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         val expensesList = listOf(expense1, expense2,expense3,expense4)
         val enwalletAdapter = EnwalletAdapter(expensesList)
-        binding.rvExpenditure.adapter = enwalletAdapter
+        binding.rvViews.adapter = enwalletAdapter
     }
 }

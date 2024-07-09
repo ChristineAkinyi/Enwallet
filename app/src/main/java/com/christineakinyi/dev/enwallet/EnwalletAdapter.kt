@@ -13,7 +13,7 @@ class EnwalletAdapter (val expensesList: List<Tracker>):RecyclerView.Adapter<Exp
     override fun onCreateViewHolder(rvExpenditure: ViewGroup, viewType: Int): ExpensesViewHolder {
        var itemView = LayoutInflater.from(rvExpenditure.context)
            .inflate(R.layout.expense_tracker, rvExpenditure, false)
-           return  ExpensesViewHolder(itemView)
+           return  ExpensesViewHolder((itemView))
     }
 
     override fun onBindViewHolder(holder: ExpensesViewHolder, position: Int) {
