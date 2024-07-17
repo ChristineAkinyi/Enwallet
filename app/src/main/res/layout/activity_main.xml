@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,19 +8,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-<!--<com.google.android.material.card.MaterialCardView-->
-<!--    android:id="@+id/card_view"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    app:layout_constraintTop_toTopOf="parent"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--    app:layout_constraintLeft_toLeftOf="parent"-->
-<!--    app:layout_constraintRight_toRightOf="parent"-->
-<!--    app:cardCornerRadius="8dp"-->
-<!--    app:cardElevation="4dp">-->
-
-
 
         <ImageView
             android:id="@+id/imgViewOne"
@@ -39,7 +27,9 @@
             android:layout_marginTop="42dp"
             android:text="MONEY IN"
             app:layout_constraintStart_toEndOf="@+id/imgViewOne"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -49,7 +39,9 @@
             android:layout_marginTop="8dp"
             android:text="KES 42400"
             app:layout_constraintStart_toEndOf="@+id/imgViewOne"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <ImageView
             android:id="@+id/imgViewTwo"
@@ -69,7 +61,9 @@
             android:layout_marginTop="40dp"
             android:text="MONEY OUT"
             app:layout_constraintStart_toEndOf="@+id/imgViewTwo"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -79,7 +73,9 @@
             android:layout_marginTop="8dp"
             android:text="KES 23400"
             app:layout_constraintStart_toEndOf="@+id/imgViewTwo"
-            app:layout_constraintTop_toBottomOf="@+id/txtMoneyOut" />
+            app:layout_constraintTop_toBottomOf="@+id/txtMoneyOut"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <ImageView
             android:id="@+id/imgViewThree"
@@ -99,7 +95,9 @@
             android:layout_marginTop="40dp"
             android:text="BALANCE"
             app:layout_constraintStart_toEndOf="@+id/imgViewThree"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2" 
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -109,7 +107,9 @@
             android:layout_marginTop="8dp"
             android:text="KEs 18700"
             app:layout_constraintStart_toEndOf="@+id/imgViewThree"
-            app:layout_constraintTop_toBottomOf="@+id/txtBalanceThree" />
+            app:layout_constraintTop_toBottomOf="@+id/txtBalanceThree" 
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <ImageView
             android:id="@+id/imgTransactions"
@@ -129,7 +129,9 @@
             android:layout_marginTop="48dp"
             android:text="TRANSACTIONS"
             app:layout_constraintStart_toEndOf="@+id/imgTransactions"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <TextView
             android:id="@+id/txtTransact"
@@ -139,7 +141,9 @@
             android:layout_marginTop="8dp"
             android:text="8"
             app:layout_constraintStart_toEndOf="@+id/imgTransactions"
-            app:layout_constraintTop_toBottomOf="@+id/txtTransactions" />
+            app:layout_constraintTop_toBottomOf="@+id/txtTransactions"
+            android:fontFamily="@font/teachers"
+            android:textFontWeight="700"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvViews"
